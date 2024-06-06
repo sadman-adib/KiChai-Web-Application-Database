@@ -1,0 +1,180 @@
+:root {
+  --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+}
+
+input,
+select,
+textarea,
+button {
+  outline: 0;
+}
+
+.container{
+  max-width: 100%;
+  min-height: 100%;
+  margin: 0 auto;
+  background-color: white;
+  padding: 0%;
+}
+
+.image{
+  position: absolute;
+  width: 50%;
+  max-width: 960px;
+  height: 100%;
+  top:0%;
+  left: 0%;
+  z-index: 1;
+}
+
+.form{
+  width: 50%;
+  max-width: 960px;
+  left: 50%;
+  top: 0%;
+}
+
+.logo{
+  position: absolute;
+  top:13%;
+  left: 62.5%;
+  width: 32.73%;
+  max-width: 500px;
+  z-index: 2;
+}
+
+.welcome-message{
+  position: absolute;
+  width: 100%;
+  max-width: 460px;
+  top: 40%;
+  left: 63% ;
+  font-family:Roboto, var(--default-font-family);
+  color: #2a6b53;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 38px;
+  text-align: left;
+  white-space: wrap;
+  letter-spacing: 0.15px;
+  z-index: 2;
+  margin-right: 5%;
+  margin-bottom: 5%;
+}
+
+
+.ellipse, .ellipse-1 , .ellipse-2{
+  position: absolute;
+  width: 100%;
+  max-width: 25px;
+  height: 100%;
+  max-height: 26px;
+  background-size: 100% 100%;
+  z-index: 2;
+  appearance: none;
+  -webkit-appearance: none;
+  border-radius: 50%;
+  border: 1px solid #B1B1B1; 
+  outline: none;
+}
+
+/* Change the custom radio button color when checked */
+.ellipse:checked,
+.ellipse-1:checked,
+.ellipse-2:checked {
+  box-shadow: inset 0 0 0 3px white;
+  background-color: #FFB800; /* Change color when radio button is checked */
+}
+
+
+.ellipse{
+  top: 52%;
+  left: 63%;
+}
+.ellipse-1{
+  top: 60%;
+  left: 63%;
+}
+
+.ellipse-2{
+  top: 68%;
+  left: 63%;
+}
+
+.vendor,.customer,.specialist{
+  position: absolute;
+  width: 100%;
+  max-width: 77.4px;
+  height: 1.94%;
+  color: #2a6b53;
+  font-family: Roboto, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 21px;
+  text-align: left;
+  white-space: wrap;
+  z-index: 2;
+}
+
+.vendor{
+  top: 52.2%;
+  left: 66%;
+}
+.specialist{
+  top:60.2%;
+  left:66%;
+}
+.customer{
+  top:68.2%;
+  left:66%;
+}
+
+.button {
+  position: absolute;
+  width: 100%;
+  max-width: 435px;
+  height: auto;
+  top: 78%;
+  left: 66%;
+  background-color: #ffb700;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  z-index: 7;
+  border-radius: 5px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  font-family: Roboto, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 700;
+  white-space: nowrap;
+
+}
+
+.button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.button-1 {
+  position: absolute;
+  width: 100%;
+  max-width: 435px;
+  height: auto;
+  top: 87%;
+  left: 64%;
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  z-index: 7;
+  border-radius: 5px;
+  font-family: Roboto, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 700;
+  white-space: nowrap;
+
+}

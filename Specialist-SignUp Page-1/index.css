@@ -1,0 +1,395 @@
+:root {
+    --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+      "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+      "Source Han Sans CN", sans-serif;
+  }
+  
+  .main-container {
+    overflow: hidden;
+  }
+  
+  .main-container,
+  .main-container * {
+    box-sizing: border-box;
+  }
+  
+  input,
+  select,
+  textarea,
+  button {
+    outline: 0;
+  }
+  .body{
+    margin: 0px;
+  }
+  .main-container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    background: #ffffff;
+    overflow: hidden;
+    margin: 0%;
+    padding: 0%;
+  }
+  
+  .right-section {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .left-section, .right-section {
+    flex: 1;
+    width: 50%;
+    height: 100vh; 
+    float: left;
+    box-sizing: border-box;
+    padding: 0px;
+  }
+  
+  .right-top-section{
+    flex: 1; 
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 10px;
+    position: relative; 
+  }
+  
+  .left-section{
+    position: relative;
+    width: 50%;
+    top: 0%;
+    left: 0%;
+  }
+  
+  .logo{
+    position: absolute; 
+    top: 15%;
+    left: 50%;
+    width: 50%;
+    transform: translate(-50% , -50%);
+  }
+
+  .progress-bar {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    max-width: 432px;
+    top: 27%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+  }
+  
+  .steps {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    position: relative;
+    z-index: 2; /* to ensure steps are above the line */
+  }
+  
+  .step {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #FFB800;
+    border-radius: 50%;
+    background-color: white;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .step.active {
+    background-color: #F6CB3D;
+    color: #000000;
+  }
+  
+  .step span {
+    display: block;
+  }
+  
+  .progress-line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #F6CB3D;
+    transform: translateY(-50%);
+  }  
+
+  .welcome-message {
+      text-align: center;
+      margin-top: 20px;
+      position: absolute;
+      height: 40px;
+      top: 30%;
+      left: 25%;
+      color: #2a6b53;
+      font-family: Roboto, var(--default-font-family);
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 38px;
+      text-align: left;
+      white-space: wrap;
+      letter-spacing: 0.15px;
+      z-index: 15;
+  
+  }
+  
+  .default-stroke,.default-stroke-2,
+  .default-stroke-3,.default-stroke-4,
+  .default-stroke-5,.default-stroke-6,
+  .default-stroke-7, .default-stroke-8{
+    position: absolute;
+    width: 22.5%;
+    max-width: 432px;;
+    border: none;
+    border-bottom: 1px solid #b1b1b1;
+    background-size: cover;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: #b1b1b1;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    letter-spacing: 0.15px;
+    padding-bottom: 0.5%;
+    padding: 0.5%;
+  }
+  /*First name*/
+  .default-stroke{
+    margin-right: 10px;
+    left: 62.8%;
+    top:40%;
+    width: 100%;
+    max-width: 190px;
+    padding-right: 10px;
+  }
+  /*password*/
+  .default-stroke-2{
+    left: 62.8%;
+    top: 58%;
+    width: 100%;
+    max-width: 423.3px;
+  }
+  /*retype-password*/
+  .default-stroke-3{
+    left: 62.8%;
+    top: 64%;
+    width: 100%;
+    max-width: 423.3px; 
+  }
+  /*Last name*/
+  .default-stroke-4{
+    left: calc(74.4% + 10px);
+    top: 40%;
+    width: 100%;
+    max-width: 190px;
+  }
+  /*email*/
+  .default-stroke-5{
+    left: 62.8%;
+    top: 46%;
+    width: 100%;
+    max-width: 423.3px;
+  }
+   /*Phone*/
+  .default-stroke-8{
+    left: 62.8%;
+    top: 52%;
+    width: 100%;
+    max-width: 423.3px;
+     
+  }
+
+  /*city*/
+  .default-stroke-6{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    left: 62.8%;
+    top: 70%;
+    width: 100%;
+    max-width: 190px;
+    padding-right: 5%;
+    margin-right: 10px;
+  }
+  /*post-code*/
+  .default-stroke-7{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: absolute;
+    margin-left: 10px;
+    left: calc(74% + 10px);
+    top: 70%;
+    width: 100%;
+    max-width: 190px;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* This will allow them to stack on smaller screens */
+  }
+  
+  .group {
+    flex: 1; /* Each form group will take equal width */
+    margin: 0 10px; /* Add margin for spacing */
+  }
+  
+  
+  .button{
+    position: absolute;
+    width: 100%;
+    max-width: 425px;
+    height: 5.93%;
+    top: 80%;
+    left: 62.9%;
+    background: #ffb700;
+    z-index: 7;
+    border-radius: 5px;
+    border: none;
+    color: #ffffff;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23.438px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 8;
+    text-align: center;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.002);
+  }
+  
+  .button:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+  
+  .sign-up{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 1.94%;
+    text-decoration: none;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 4;
+    color: #FFB800;
+    background-color: none;
+    display: inline-block;
+   }
+
+   .sign-up{
+    left: 102%;
+   }
+  
+   .forget-pass:hover,
+   .sign-up:hover {
+     color: red; /* Change text color on hover */
+     background-color: transparent; /* Set background color to transparent on hover */
+   }
+   
+   .text-1{
+    top: 89%;
+    left: 66.4%;
+    position:absolute;
+    color: #bdbdbd;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.094px;
+    text-align: center;
+    white-space: wrap;
+   }
+  
+   .password-toggle{
+    position: absolute;
+    left: 83.5%;
+    top: 65.2%;
+    color: #b1b1b1;
+    cursor: pointer;
+    z-index: 10;
+   }
+   .password-toggle-1{
+    position: absolute;
+    left: 83.5%;
+    top: 59.2%;
+    color: #b1b1b1;
+    cursor: pointer;
+    z-index: 10;
+   }
+
+   .input-filled {
+    border: 1px solid #373737;
+    border-radius: 5px;
+    color: #373737;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    letter-spacing: 0.15px;
+    padding: 0.5%;
+   }
+  
+  /* New styles for smaller screens */
+  @media screen and (max-width: 768px) {
+    .right-top-section {
+      padding: 5px; /* Adjust padding for smaller screens */
+    }
+  
+    .welcome-message {
+      font-size: 20px; /* Adjust font size for smaller screens */
+      top: 30%; /* Adjust position for smaller screens */
+      left: 50%; /* Adjust position for smaller screens */
+      transform: translate(-50%, -50%);
+    }
+  
+    .default-stroke,
+    .default-stroke-2 {
+      width: 100%; /* Make input fields full width on smaller screens */
+      max-width: none; /* Remove max-width on smaller screens */
+      left: auto; /* Remove left position */
+      top: 50%; /* Adjust vertical position for smaller screens */
+      transform: translateY(-50%);
+    }
+  
+    .check-box,
+    .button {
+      width: 100%; /* Make checkbox and button full width on smaller screens */
+      left: auto; /* Remove left position */
+      top: 60%; /* Adjust vertical position for smaller screens */
+      transform: translateY(-50%);
+      text-align: center; /* Center the button text */
+    }
+  
+    .forget-pass,
+    .sign-up {
+      top: 70%; /* Adjust vertical position for smaller screens */
+      left: 50%; /* Center horizontally on smaller screens */
+      transform: translateX(-50%);
+      text-align: center; /* Center the link text */
+    }
+  
+    .text-1 {
+      top: 80%; /* Adjust vertical position for smaller screens */
+      left: 50%; /* Center horizontally on smaller screens */
+      transform: translateX(-50%);
+      text-align: center; /* Center the text */
+    }
+  }
+  

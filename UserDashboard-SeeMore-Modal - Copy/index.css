@@ -1,0 +1,269 @@
+body {
+  overflow: hidden;
+}
+
+/* Add your existing CSS styles below */
+:root {
+  --gray-6: rgba(242, 242, 242, 1);
+  --primary-contrast-text: rgba(255, 255, 255, 1);
+  --shadow-2: 0px 1px 5px 0px rgba(0, 0, 0, 0.12), 0px 2px 2px 0px rgba(0, 0, 0, 0.14),
+    0px 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.profile-pic1 {
+  position: absolute;
+  top: 5%;
+  left: 8%;
+  height: 10%;
+  z-index: 60;
+  border-radius: 50%;
+}
+
+.location1 {
+  top: 13%;
+  left: -20.8%;
+  display: block;
+  position: absolute;
+  height: 22px;
+  margin: 108.637px 0 0 504px;
+  color: #282828;
+  font-family: Manrope, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.856px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 16;
+}
+
+.phone-number1 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 7.54%;
+  top: 11%;
+  left: 11%;
+  color: #292929;
+  font-family: Manrope, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 17px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 17;
+}
+
+.name1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  width: 102.75px;
+  height: 18.51%;
+  top: 11%;
+  left: 11%;
+  color: #494949;
+  font-family: Manrope, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.856px;
+  text-align: left;
+  white-space: nowrap;
+  letter-spacing: -0.24px;
+  z-index: 63
+}
+
+.about1 {
+  position: absolute;
+  top: 20%;
+  left: 5.8%;
+  z-index: 18;
+  overflow: hidden;
+  white-space: wrap;
+}
+
+.text1{
+  position: absolute;
+  top:10%;
+  right: 8%;
+  color: #292929;
+  font-family: Manrope, sans-serif;
+}
+
+.profile-pic1 {
+  position: absolute;
+  top: 10%;
+  left: 8%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.review-content1 {
+  flex: 1;
+}
+
+.reviewer-name1 {
+  position: absolute;
+  top: 7%;
+  left: 20.8%;
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.reviewer-title1{
+  position: absolute;
+  top:11%;
+  left: 20.8%;
+  margin: 0;
+  font-family: Manrope, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23.56px;
+  text-align: left;
+  text-overflow: initial;
+  white-space: nowrap;
+  color: #2A6B53;
+}
+
+.reviewer-location1 {
+  position: absolute;
+  top: 16%;
+  left: 20%;
+  font-size: 14px;
+  color: #777;
+}
+
+.location-icon1 {
+  position: absolute;
+  top: -20%;
+  width: 20px;
+  height: 20px;
+  background-image: url(assets/images/bx_bx-current-location.png);
+  z-index: 50;
+}
+
+.review-text-11{
+  font-size: 14px;
+  color: #494949;
+  position: absolute;
+  top: 35%;
+  left: 20%;
+
+}
+
+.review-icon1{
+  position: absolute;
+  top: -1%;
+  left: 0%;
+  width: 20px;
+  height: 20px;
+  background-image: url(assets/images/carbon_review.png);
+  z-index: 50;
+}
+
+.review-text1 {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  margin: 10px 0;
+  font-size: 14px;
+  color: #666;
+  padding-right: 10%;
+  font-family: Manrope, var(--default-font-family);
+}
+
+.review-rating1 {
+  align-self: stretch;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.rating-stars1 {
+  position: absolute;
+  top: 26%;
+  left: 20%;
+  color: #ffd700; /* Gold color for stars */
+  font-size: 25px;
+}
+
+.rating-label1 {
+  position: absolute;
+  top: 23%;
+  left: 20%;
+  color: #282828;
+  font-family: Manrope, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.856px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 16;
+}
+
+.see-more-btn1 {
+  position: absolute;
+  top: 85%;
+  left: 23%;
+  width: 100%;
+  max-width: 303px;
+  max-height: 32px;
+  background-color: #ffb700; /* Orange background color */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.taka-icon1 {
+  color: black; /* Set the color to black */
+}
+
+/* Add your existing CSS styles below */
+
+/* The Modal (background) */
+.modal{
+  align-items: center;
+  position: absolute;
+   top: 10%;
+  left: 29%;
+  width: 50%; /* Adjust the width as needed */
+  max-width: 556px;
+  height: 100%;/* Adjust the height as needed */
+  max-height: 569px;
+  background-color: #fff; /* Adjust the background color as needed */
+  box-shadow: var(--shadow-2);
+  padding: 10px;
+}
+
+/* Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

@@ -1,0 +1,315 @@
+body {
+  overflow: hidden;
+}
+
+/* Add your existing CSS styles below */
+:root {
+  --gray-6: rgba(242, 242, 242, 1);
+  --primary-contrast-text: rgba(255, 255, 255, 1);
+  --shadow-2: 0px 1px 5px 0px rgba(0, 0, 0, 0.12), 0px 2px 2px 0px rgba(0, 0, 0, 0.14),
+    0px 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.custom-container {
+  align-items: center;
+  position: absolute;
+   top: 10%;
+  left: 29%;
+  width: 50%; /* Adjust the width as needed */
+  max-width: 556px;
+  height: 100%;/* Adjust the height as needed */
+  max-height: 569px;
+  background-color: #fff; /* Adjust the background color as needed */
+  box-shadow: var(--shadow-2);
+  padding: 10px;
+}
+
+.profile-pic {
+  position: absolute;
+    top: 6%;
+    left: 12%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.User-name {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  width: 102.75px;
+  height: 18.51%;
+  top: 6.9%;
+  left: 23%;
+  color: #494949;
+  font-family: Manrope, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21.856px;
+  text-align: left;
+  white-space: nowrap;
+  letter-spacing: -0.24px;
+  z-index: 63
+}
+
+.about {
+  position: absolute;
+  top: 20%;
+  left: 5.8%;
+  z-index: 18;
+  overflow: hidden;
+  white-space: wrap;
+}
+
+.text{
+  position: absolute;
+  top:16.3%;
+  left: 12%;
+  right: 8%;
+  color: #292929;
+  font-family: Manrope, sans-serif;
+}
+
+.Add-Job-content {
+  flex: 1;
+}
+
+
+.Job-Type{
+  position: absolute;
+  top:9.8%;
+  left: 23%;
+  margin: 0;
+  font-family: Manrope, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23.56px;
+  text-align: left;
+  text-overflow: initial;
+  white-space: wrap;
+  color: #2A6B53;
+  width: 300px;
+}
+
+#Service-Type{
+  position: absolute;
+  top: 22%;
+  left: 12%;
+  width: 200px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #ffb700;
+  color: #fff;
+  font-family: Manrope, var(--default-font-family);
+}
+
+#Service-Type:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+#Area{
+  position: absolute;
+  top: 22%;
+  right: 9%;
+  width: 200px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #ffff;
+  color: #494949;
+  border: 2px solid #ffb700;
+  font-family: Manrope, var(--default-font-family);
+}
+
+#Area:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+#post-code{
+  position: absolute;
+  top: 30%;
+  left: 12%;
+  width: 200px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #ffff;
+  color: #494949;
+  border: 2px solid #ffb700;
+  font-family: Manrope, var(--default-font-family);
+}
+
+#post-code:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+#Date{
+  position: absolute;
+  top: 30%;
+  right: 8.8%;
+  width: 200px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #ffff;
+  color: #494949;
+  border: 2px solid #ffb700;
+  font-family: Manrope, var(--default-font-family);
+}
+
+#Date:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+#Select-time{
+  position: absolute;
+  top: 38%;
+  left: 12%;
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #ffb700;
+  color: #fff;
+}
+
+#Select-time:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+.Per-hour-rate{
+  position: absolute;
+  top: 38%;
+  right: 8.8%;
+  width: 200px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #ffff;
+  color: #494949;
+  border: 2px solid #ffb700;
+  font-family: Manrope, var(--default-font-family);
+}
+
+.Per-hour-rate:focus{
+  position: absolute;
+  top: 38%;
+  right: 8.8%;
+  width: 200px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #ffff;
+  color: #494949;
+  border: 2px solid #ffb700;
+  font-family: Manrope, var(--default-font-family);
+}
+
+.taxt-area{
+  position: absolute;
+  top: 50%;
+  left: 12.88%;
+  width: 100%;
+  height: 100%;
+  max-width: 429px;
+  max-height: 224px;
+  border: none;
+  border-bottom: 1px solid #b1b1b1;
+  background-size: cover;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #494949;
+  font-family: Roboto, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  letter-spacing: 0.15px;
+  padding-bottom: 0.5%;
+  padding: 0.5%;
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.075);
+}
+
+.see-more-btn {
+  position: absolute;
+  top: 85%;
+  left: 23%;
+  width: 100%;
+  max-width: 303px;
+  max-height: 32px;
+  background-color: #ffb700; /* Orange background color */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+  box-shadow: var(--shadow-2);
+
+}
+
+.see-more-btn:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Add your existing CSS styles below */
+
+/* The Modal (background) */
+.modal {
+  align-items: center;
+  position: absolute;
+   top: 10%;
+  left: 29%;
+  width: 50%; /* Adjust the width as needed */
+  max-width: 556px;
+  height: 100%;/* Adjust the height as needed */
+  max-height: 739px;
+  background-color: #fff; /* Adjust the background color as needed */
+  box-shadow: var(--shadow-2);
+  padding: 10px;
+}
+
+/* Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

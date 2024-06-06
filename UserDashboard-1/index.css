@@ -1,0 +1,385 @@
+body {
+  overflow: hidden;
+}
+
+/* Add your existing CSS styles below */
+:root {
+  --gray-6: rgba(242, 242, 242, 1);
+  --primary-contrast-text: rgba(255, 255, 255, 1);
+  --shadow-2: 0px 1px 5px 0px rgba(0, 0, 0, 0.12), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style the main content area */
+.main-content {
+  flex-grow: 1; /* Allow the main content to grow to fill the remaining space */
+  padding: 20px;
+}
+
+/* Style the container */
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 1440px;
+  height: 100%;
+  max-height: 1024px;
+}
+
+.logo {
+  position: absolute;
+  width: 199px;
+  height: 214px;
+  top: -18%;
+  left: 3.7%;
+  object-fit: cover;
+  margin: 10%;
+}
+
+.welcome-text {
+  position: relative;
+  color: #2a6b53;
+  font-family: Manrope, sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.2;
+  text-align: left;
+  letter-spacing: -1.35px;
+  left: 9%;
+  top: 2%;
+}
+
+.user-name {
+  position: relative;
+  color: #494949;
+  font-family: Manrope, sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.2;
+  text-align: left;
+  letter-spacing: -1.35px;
+  left: 20%;
+  top: 2%;
+}
+
+.dashboard {
+  position: absolute;
+  width: 161px;
+  height: 30px;
+  top: 3.8%;
+  right: 4%;
+  color: #2a6b53;
+  font-family: Manrope, sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  white-space: nowrap;
+  letter-spacing: -1.35px;
+  z-index: 21;
+}
+
+.sidebar-menu {
+  list-style-type: none;
+  padding: 0; /* Remove default padding */
+  margin-top: 65%; /* Add space between the top of the sidebar and the list items */
+  margin-left: 6%;
+}
+
+.sidebar-menu li a {
+  position: absolute;
+  top: 30%;
+  text-decoration: none;
+  display: block;
+  position: relative;
+  height: 25px;
+  margin: 0 0 10% 210px;
+  color: #494949;
+  font-family: Roboto, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.2;
+  text-align: left;
+  white-space: nowrap;
+  letter-spacing: -0.3px;
+  z-index: 25;
+}
+
+/* When a navigation item is clicked */
+.sidebar-menu li a.active {
+  color: #ffb700; /* Change font color to #ffb700 */
+}
+
+/* When a navigation item is clicked, change the color of the icon inside it */
+.sidebar-menu li a.active i {
+  color: #ffb700; /* Change icon color to #ffb700 */
+}
+
+.custom-container {
+  position: absolute;
+  top: 10%;
+  left: 29%;
+  width: 100%; /* Adjust the width as needed */
+  height: 100%; /* Adjust the height as needed */
+  background-color: #fff; /* Adjust the background color as needed */
+  box-shadow: var(--shadow-2);
+}
+
+.button-container {
+  position: absolute;
+  top: 80%;
+  left: 13.6%;
+  z-index: 7;
+  border-radius: 7px;
+}
+
+.button {
+  width: 195px;
+  height: 36px;
+  background: #ffb700;
+  border-radius: 7px;
+  border: none;
+  color: #ffffff;
+  font-family: Roboto, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.button-container:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button i {
+  margin-right: 5px; /* Adjust the spacing between the icon and text */
+}
+
+.profile-pic {
+  position: absolute;
+  top: 5%;
+  left: 6%;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  z-index: 10;
+  box-shadow: var(--shadow-2);
+}
+
+.name {
+  position: absolute;
+  top: 4%;
+  left: 15%;
+  color: #292929;
+  font-family: Manrope, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  z-index: 10;
+}
+
+.phone-number {
+  position: absolute;
+  top: 8.2%;
+  left: 15%;
+  color: #292929;
+  font-family: Manrope, sans-serif;
+  font-size: 16px;
+  z-index: 10;
+}
+
+.location {
+  position: absolute;
+  top: 12%;
+  left: 15%;
+  color: #292929;
+  font-family: Manrope, sans-serif;
+  font-size: 16px;
+  z-index: 10;
+}
+
+.about {
+  position: absolute;
+  top: 15.5%;
+  left: 15%;
+  color: #292929;
+  font-family: Manrope, sans-serif;
+  font-size: 14px;
+  width: 50%;
+  z-index: 10;
+  white-space: wrap;
+}
+
+.button-1 {
+  position: absolute;
+  top: 5%;
+  left: 46%;
+  width: 200px;
+  height: 50px;
+  border: none;
+  background-image: url('assets/images/3 3.png');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  box-shadow: var(--shadow-2);
+}
+
+.button-1:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Calendar CSS */
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+:root {
+  --primary-color: #ffb700;
+  --text-color: #1d1d1d;
+  --bg-color: #f1f1fb;
+}
+
+.calendar-container {
+  position: relative;
+  top: 20%;
+  left: 15%;
+  height: 60%;
+  width: 70%;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.calendar {
+  width: 100%;
+  max-height: 500px;
+  max-width: 600px;
+  background: var(--bg-color);
+  padding: 30px 20px;
+  border-radius: 10px;
+}
+
+.calendar .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #ccc;
+}
+
+.calendar .header .month {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.calendar .header .btns {
+  display: flex;
+  gap: 10px;
+}
+
+.calendar .header .btns .btn {
+  width: 50px;
+  height: 40px;
+  background: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.calendar .header .btns .btn:hover {
+  background: #ffb700;
+  transform: scale(1.05);
+}
+
+.calendar .weekdays {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.calendar .weekdays .day {
+  width: calc(100% / 7 - 10px);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.calendar .days {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.calendar .days .day {
+  width: calc(100% / 7 - 10px);
+  height: 50px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-color);
+  transition: all 0.3s;
+  user-select: none;
+}
+
+.calendar .days .day:not(.next):not(.prev):hover {
+  color: #fff;
+  background: var(--primary-color);
+  transform: scale(1.05);
+}
+
+.calendar .days .day.next,
+.calendar .days .day.prev {
+  color: #ccc;
+}
+
+.calendar .days .day.today {
+  color: #fff;
+  background: var(--primary-color);
+}
+
+.credits a {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  color: #aaa;
+}
+
+.credits span {
+  color: var(--primary-color);
+}
+
+.calendar .header .btns .btn i {
+  /* Ensures that the FontAwesome icons inherit the color and size from the button */
+  color: inherit;
+  font-size: inherit;
+}
+
+.calendar .days .day.has-task {
+  background-color: var(--primary-color);
+  color: #fff;
+  cursor: pointer;
+}
+
+.calendar .days .day.has-task:hover {
+  background-color: #ffb700;
+  transform: scale(1.05);
+}
